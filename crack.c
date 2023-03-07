@@ -42,13 +42,13 @@ int crack(int len) {
         }
 
         else if (str[idx] == '~') {
-            str[idx] = ' '; // if that previous index is `~', set it to ' '
+            str[idx] = ' ' - 1; // if that previous index is `~', set it to ' '
             idx--; // and decrement idx, so the else statement can take place
         }
 
         else {
             if (str[idx] == '\0')
-                str[idx] = ' ';
+                str[idx] = ' ' - 1;
             char ch = str[idx];
             ch++; // increment that char by 1
             // don't have to worry about '~' getting incremented, because previous block takes care of it
