@@ -22,7 +22,7 @@ int crack(int len) {
     }
 
     for (int i = 0; i < len - 1; i++) {
-        check_str[i] = '~';  // '~' is the char with lowest ascii value
+        check_str[i] = '~';  // '~' is the char with highest ascii value
     }
 
     while (strcmp(str, check_str)) {
